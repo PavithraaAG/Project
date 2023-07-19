@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <header>
+        <h1>Notes</h1>
+        <main>
+            <button id="new-note-btn">New Note</button>
+           <div id="popup">
+            <form id="note-form">
+                <input type="text" id="note-title" placeholder="Enter note title" required>
+                <textarea id="note-content" placeholder="Enter note content" required></textarea>
+                <button type="submit">Save Note</button>
+              </form>
+           </div> 
+           <div class="popupbg"></div>           
+            <div id="note-list"></div>
+          </main>
+        
+    
     <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
