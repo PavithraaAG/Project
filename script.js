@@ -53,7 +53,8 @@ function displayNotes() {
   noteList.innerHTML = '';
 
   notes.forEach(function (note, index) {
-    var noteItem = document.createElement('div');
+    var noteItem = document.createElement('div')
+    
     noteItem.innerHTML = '<h1 id="head">' + note.title + '</h1><p>' + note.content + '</p>';
     
     var deleteButton = document.createElement('button');
