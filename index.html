@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <!-- <style>
+        .show{
+            display:none;
+        }
+    </style> -->
 </head>
+
 <body>
     <header>
-        <h1>Notes</h1>
-        <main>
-            <button id="new-note-btn">New Note</button>
-           <div id="popup">
+        <center><h1>Notes</h1></center>
+    </header>
+    <main>
+        <center><button id="new-note-btn">New Note</button></center>
+        <div id="popup" class="popup">
             <form id="note-form">
+                <label>TITLE</label>
                 <input type="text" id="note-title" placeholder="Enter note title" required>
+                <label>DESCRIPTION</label>
                 <textarea id="note-content" placeholder="Enter note content" required></textarea>
-                <button type="submit">Save Note</button>
-              </form>
-           </div> 
-           <div class="popupbg"></div>           
-            <div id="note-list"></div>
-          </main>
-        
-    
+                <button type="submit" id="submit">Save Note</button>
+            </form>
+        </div>
+        <div class="popupbg"></div>
+        <div id="note-list"></div>
+    </main>
+
+
     <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
